@@ -1,0 +1,16 @@
+{
+	"name":"Calendar",
+	"version":"1.0",
+	"manifest_version":3,
+	"description":"A simple calendar with little range",
+	"action":{
+		"default_title":"Calendar",
+		"default_popup":"popup.html",
+		"default_icon":{
+			"16":"icons/Calendar16.png",
+			"48":"icons/Calendar48.png",
+			"128":"icons/Calendar128.png"
+		}
+	}
+
+}

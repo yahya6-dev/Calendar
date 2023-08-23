@@ -1,0 +1,60 @@
+<!doctype html>
+ <html lang="en">
+  <head>
+  	<meta charset="utf-8">
+  	<link rel="stylesheet" href="dist/css/bootstrap.min.css">
+    <script src="dist/js/bootstrap.bundle.min.js"></script>
+    
+  	<style>
+  	  body{
+  	  	background-color:white;
+  	  	width:200px;
+  	  	height:300px;
+  	  }
+  	  select{
+  	  	outline:2px solid #03c04a;
+  	  	color:#404040;
+  	  	background-color:#03c04a;
+  	  	height:36px;
+  	  	width:calc( 100% - 8px - 8px);
+  	  	padding:8px;
+  	  	padding-left: 36px;
+  	  	margin:8px;
+  	  	font-size:16px;
+  	  	background:url("icons/calendar-day.svg");
+  	  	background-position:4px center;
+  	  	background-repeat:no-repeat;
+  	  }
+
+  	  #display{
+  	  	margin:8px;
+  	  	padding:8px;
+  	  	width:calc(100% - 8px * 2);
+  	  	color:white;
+  	  	font-weight: bold;
+  	  	font-family:sans-serif;
+  	  	font-size:25px;
+  	  	background-color:rgba(240,0,0,0.7);
+  	  }
+  	</style>
+  </head>
+
+  <body>
+
+   <div class="flex-row">
+   	<img src="icons/Calendar.png" style="width:200px;height:150px;margin-bottom: 16px;">
+   	<div id="display">
+
+   	</div>
+   	<select id="target" class="rounded-2">
+   		<option value="islamic">islamic</option>
+      <option value="chinese">chinese</option>
+      <option value="japanese">japanese</option>
+      <option value="ethiopic">ethiopic</option>
+      <option value="gregory">gregory</option>
+   	</select>
+   </div>
+   <script src="popup.js"></script>
+  </body>
+
+ </html>
